@@ -1,0 +1,12 @@
+from enum import Enum
+
+from gym_tetris.actions import SIMPLE_MOVEMENT
+
+
+class Action(Enum):
+    NOTHING = SIMPLE_MOVEMENT[0]
+    ROTATE_CW = SIMPLE_MOVEMENT[1]
+    ROTATE_CCW = SIMPLE_MOVEMENT[2]
+    RIGHT = SIMPLE_MOVEMENT[3]
+    LEFT = SIMPLE_MOVEMENT[4]
+    DROP = SIMPLE_MOVEMENT[5]
